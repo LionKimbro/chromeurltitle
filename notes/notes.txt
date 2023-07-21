@@ -1,0 +1,11 @@
+title: chromeurltitle notes
+date: 2023-07-20
+
+
+== TCP Port Configuration ==
+date: 2023-07-20
+
+Port selection for my tool
+
+port: 38582
+transport: tcp

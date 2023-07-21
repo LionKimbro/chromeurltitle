@@ -1,0 +1,38 @@
+title: chromeurltitle development log
+date: 2023-07-20
+
+
+== 2023-07-20 ==
+date: 2023-07-20
+
+  I've relocated the project from trigger, into the factory system;
+  I've had to do quite a bit of work to get it structured for git
+  and Python packages.
+
+  It shouldn't work -- and it's totally untested, in its new form.
+
+
+  Things I need to do:
+
+  LEARN
+  [ ] How do config files typically work in a Python ecology
+      based on pip install?
+
+  VERIFY
+  [ ] Verify that the chrome extension still works,
+      is side-loadable into chrome, yadda yadda yadda.
+
+  IMPLEMENT
+  [ ] Factory system:
+      I need to set up the hot key environment for working on
+      devlog.txt and notes.txt in EMACS.
+
+  [ ] Factory system:
+      TRIGGER.json
+
+  [ ] Make sure that the server can be run, and that the
+      configuration file system makes sense, whatever it is.
+
+
+
+

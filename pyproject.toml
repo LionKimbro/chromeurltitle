@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bookmarkreceiver"
+version = "1.0.0"
+
+authors = [
+  { name="Lion Kimbro", email="lionkimbro+program@gmail.com" },
+]
+
+description = "receive bookmarks from various sources; developed around a Chrome bookmarking extension named: chromeurltitle"
+
+readme = "README.txt"
+
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+]
+
+[project.urls]
+"Homepage" = "https://github.com/LionKimbro/chromeurltitle"
+"Bug Tracker" = "https://github.com/LionKimbro/chromeurltitle/issues"
+
