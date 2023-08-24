@@ -21,7 +21,7 @@
     "LOGRINGLEN": 20,
     "SESSIONFILELOC": "SM",
     "SESSIONFILENAME": "bookmarkreceiver_session.json",
-    "EXECUTIONTYPE": "TCPSERVER"
+    "EXECUTIONTYPE": "WEBSERVER"
   },
   "FACTORY2023": {
     "PROJECTID": "0103"
@@ -30,5 +30,22 @@
   "MODULES": [],
   "RESOURCES": [],
   "SNOWFLAKES": [],
-  "CONFIG": []
+  "CONFIG": [
+    {"NAME": "outputdir",
+     "TITLE": "Output Directory",
+     "DESC": "full folder path, to a folder that received links will be output to",
+     "TYPE": "str",
+     "DEFAULT": "",
+     "OPTIONS": [],
+     "FLAGS": "req"},
+    {"NAME": "outputfile",
+     "TITLE": "Output File",
+     "DESC": "name of the output file, that will contain the JSON link data",
+     "TYPE": "str",
+     "DEFAULT": "LINK.json",
+     "OPTIONS": [],
+     "FLAGS": "req"}
+  ]
 }
+
+
