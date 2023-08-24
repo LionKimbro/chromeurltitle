@@ -1,0 +1,34 @@
+{
+  "APPID": {
+    "GUID": "6d5a9630-9ce4-4aa5-b093-e1267128d858",
+    "TAGURI": "lionkimbro@gmail.com,2023-07-06:project:chromeurltitle",
+    "NAME": "chromeurltitle",
+    "TITLE": "Chrome URL & Title Retrieval",
+    "TAGS": "webbrowser chrome extension chromeextension",
+    "DESC": "a chrome extension & local Python listener for getting a URL and title out of the web browser"
+  },
+  "PACKAGE": {
+      "DISTRIBUTIONNAME": "bookmarkreceiver",
+      "VERSION": "1.0.0",
+      "CLASSIFIERS": [
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent"
+      ],
+      "DEPENDENCIES": []
+  },
+  "CHASSIS2023": {
+    "LOGRINGLEN": 20,
+    "SESSIONFILELOC": "SM",
+    "SESSIONFILENAME": "bookmarkreceiver_session.json",
+    "EXECUTIONTYPE": "TCPSERVER"
+  },
+  "FACTORY2023": {
+    "PROJECTID": "0103"
+  },
+  "GITHUB": {"NAME": "chromeurltitle"},
+  "MODULES": [],
+  "RESOURCES": [],
+  "SNOWFLAKES": [],
+  "CONFIG": []
+}
