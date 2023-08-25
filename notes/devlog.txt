@@ -2,6 +2,96 @@ title: chromeurltitle development log
 date: 2023-07-20
 
 
+== When You Return from Burning Man ==
+date: 2023-08-24
+
+  OK!  So, here's a high level view:
+
+  YOU ARE HERE:
+    chromurltitle (the system)
+    bookmarkreceiver (the web server that receives from the chrome plugin)
+
+  * You've been working on your build system -- the "factory."
+
+  * You've been hankering to make a program that you can draw
+    bookmarks into, like its a city, on an infinite plane.
+
+    - Your thought is to draw on a scrolling canvas, drawing in
+      polygons, with keyboard commands to specify what you're doing,
+      and pull in the links from the bookmarkreceiver.
+
+  * You are ALSO very interested in the component communication system,
+    and making systems out of reusable parts, working in lockstep.
+
+  * The "chassis2023" is the super-framework you're going to use for
+    everything, including communications between components.
+
+  * You are working on the bookmark receiver ("bookmarkreceiver,")
+    and building up the super-framework (chassis2023) at the same time,
+    by using a strategy of "imaginary coding" -- coding as if the other
+    pieces were present, and slowly pulling them in.
+
+  * You've just finished making it so that data/ files and the file
+    that describes the contents of a package (package.json) are stored
+    in a python module in the src/ package.  The file is
+    "databytes.py", and it has a module variable "files", that is a
+    dictionary from filename (like "package.json") to the bytes of
+    that file.  This is how you are packaging data/ from the factory.
+
+  * Your mission is now:
+
+  1. implement chassis2023.run_package(packagename)
+  2. have it populate a configuration from command line arguments,
+     and ensure that everything with the "req" flag is populated
+  3. have a webserver started for CHASSIS2023.EXECUTIONTYPE WEBSERVER,
+     and wire up the RequestHandler to the package's handler module,
+     which, handler.py includes a docstring with the requirements
+     for what needs to be done in preparation to calling POST.
+  4. configuration of the webserver should be done in a section of
+     project.json that will be called "WEBSERVER", and I think I want
+     to have "LOGGING": "SILENT" be the first option there
+
+
+== 2023-08-24 ==
+date: 2023-08-24
+
+  I'm co-developing chassis2023 at the same time.
+
+  To do that, I'm just programming "in the pretend," and keeping track
+  of what's needed from chassis2023.
+
+
+  Packaging System -- I'm going to wait on this one, until I have the
+    chassis far enough.  So in the mean time, just build the data
+    packing into the normal factory.  Transfer it over, when
+    developing the packaging system, and then change the factory to
+    use the packaging system.
+
+  (Prior Chat-GPT, where I looked into how to do this...)
+    https://chat.openai.com/share/0898e57a-a49a-4281-805a-898a058c7806
+
+  There is a simple way to do this right now, though, ...  ...and that
+  is, in the package system, auto-generate a file "databytes.py" in
+  the generated src directory, that contains the binary for data/ files,
+  and package.json, under a variable called "files".
+
+    7:48p -- DONE.
+
+
+  OK, now I can read the configuration from the databytes contents.
+
+  So, I should be able to work on meeting some of the promises for the
+  WEBSERVER.
+
+
+  So, how do I do this..?
+
+  -- implement chassis2023.run_package(packagename)
+  -- have it populate a configuration, and ensure everything required is defined
+  -- have it start a web server
+
+
+
 == 2023-07-20 ==
 date: 2023-07-20
 

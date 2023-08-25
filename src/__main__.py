@@ -19,6 +19,6 @@ import chassis2023
 #
 #
 # After it is verified that all the information required is present,
-# chassis2023 will 
-chassis.run()
+# chassis2023 will
+chassis.run_package(__package__)
 
